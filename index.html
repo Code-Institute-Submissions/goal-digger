@@ -1,41 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Goal Quote Generator</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <title>Goal Digger</title>
 </head>
 <body>
-  <header>
-    <h1>Goal Quote Generator</h1>
-  </header>
-
-  <div id="quote-box">
-    <div id="quote-text">
-      <span>"</span><span id="text">Click the button below to generate a quote!</span><span>"</span>
-    </div>
-    <div id="author-text">
-      <span>-</span><span id="author">Unknown</span>
-    </div>
-    <div class="button-container">
-      <button id="new-quote" onclick="getRandomQuote()">New Quote</button>
-    </div>
-    <div class="button-container">
-      <button id="submit-quote" onclick="submitQuote()">Submit Your Quote</button>
-    </div>
-    <form id="quote-form">
-      <label for="quote">Enter Your Quote:</label><br>
-      <textarea id="quote" name="quote" placeholder="Write your quote here..." required></textarea><br>
-      <label for="author-name">Enter Author's Name:</label><br>
-      <input type="text" id="author-name" name="author-name" placeholder="Author's name..." required><br>
-      <input type="submit" value="Submit">
-    </form>
-  </div>
-
-  <footer>
-    <p>&copy; 2023 Goal Quote Generator</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <div class="outer-container">
+        <p id="quotes"></p>
+        <p id="author"></p>
+        <button id="goal digging">Goal Digging</button>
+        </button>
+   </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
