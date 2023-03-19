@@ -1,3 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+
 body {
-    background-color: #f2f2f2;
+  background: radial-gradient(#FBBEDE, #A44CD3, #8800C7);
+  background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	height: 100vh;
+}
+
+.goaldigger {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.quotes-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.inner-quotes-box {
+  background: radial-gradient(#A44CD3,#FBBEDE, #8800C7);
+  border: 10px solid #8800C7;
+  box-shadow: 0px 2px 6px 0px rgba(255, 255, 255, 0.9);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+  width: 100%;
+  max-width: 800px;
+  min-height: 400px;
+  padding: 0 30px;
+  border-radius: 20px;
+}
+
+.inner-quotes-box p {
+  color: #36454F;
+  font-size: 1.4rem;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+.inner-quotes-box h3 {
+  color: #36454F;
+  font-size: 2.2rem;
+  font-family: Bebas Neue;
+  font-weight: lighter;
+}
+
+.quote-btn {
+  background-color: #A44CD3;
+  color: #36454F;
+
+  font-family: Bebas Neue;
+  font-weight: lighter;
+  font-size: 2rem;
+  position: relative;
+  width: 200px;
+  
+  border: none;
+  border-radius:10px;
+  box-shadow: 0px 2px 6px 0px rgba(255, 255, 255, 0.9);
+}
+
+/** Media Queries **/
+
+@media screen and (max-width:1200px) {
+  .goaldigger {
+    width: 95%;
   }
+}
+
+@media screen and (max-width:800px) {
+  .inner-quotes-box {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:600px) {  
+  .inner-quotes-box p {
+    font-size: 1.2rem;
+  }
+
+  .inner-quotes-box h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width:400px) {  
+  .inner-quotes-box {
+    width: 80%;
+  }
+
+  .goaldigger {
+    width: 80%;
+    max-width: none;
+  }
+
+  .inner-quotes-box p {
+    font-size: 1rem;
+  }
+
+  .inner-quotes-box h3 {
+    font-size: 1.4rem;
+  }
+
+  .quote-btn {
+    font-size: 1.6rem;
+  }
+}
